@@ -16,6 +16,13 @@ import { UserComponent } from './user/user.component';
 import { CoreComponent } from './core/core.component';
 import { SysrequirementsComponent } from './sysrequirements/sysrequirements.component';
 import { NavComponent } from './core/nav/nav.component';
+import {AppRoutingModule} from "./app-routing.module";
+import {PageNotFoundComponent} from "./PageNotFoundComponent";
+import {GamesModule} from "./games/games.module";
+import {DashboardModule} from "./dashboard/dashboard.module";
+import {SysrequirementsModule} from "./sysrequirements/sysrequirements.module";
+import {ReviewsModule} from "./reviews/reviews.module";
+import {FooterComponent} from "./core/footer/footer.component";
 
 @NgModule({
   declarations: [
@@ -30,13 +37,20 @@ import { NavComponent } from './core/nav/nav.component';
     UserComponent,
     CoreComponent,
     SysrequirementsComponent,
-    NavComponent
+    NavComponent,
+    PageNotFoundComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
+    GamesModule,
+    DashboardModule,
+    SysrequirementsModule,
+    ReviewsModule,
     FormsModule,
     HttpModule,
-    CoreModule
+    CoreModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

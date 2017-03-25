@@ -22,6 +22,13 @@ var user_component_1 = require('./user/user.component');
 var core_component_1 = require('./core/core.component');
 var sysrequirements_component_1 = require('./sysrequirements/sysrequirements.component');
 var nav_component_1 = require('./core/nav/nav.component');
+var app_routing_module_1 = require("./app-routing.module");
+var PageNotFoundComponent_1 = require("./PageNotFoundComponent");
+var games_module_1 = require("./games/games.module");
+var dashboard_module_1 = require("./dashboard/dashboard.module");
+var sysrequirements_module_1 = require("./sysrequirements/sysrequirements.module");
+var reviews_module_1 = require("./reviews/reviews.module");
+var footer_component_1 = require("./core/footer/footer.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -39,13 +46,20 @@ var AppModule = (function () {
                 user_component_1.UserComponent,
                 core_component_1.CoreComponent,
                 sysrequirements_component_1.SysrequirementsComponent,
-                nav_component_1.NavComponent
+                nav_component_1.NavComponent,
+                PageNotFoundComponent_1.PageNotFoundComponent,
+                footer_component_1.FooterComponent
             ],
             imports: [
                 platform_browser_1.BrowserModule,
+                app_routing_module_1.AppRoutingModule,
+                games_module_1.GamesModule,
+                dashboard_module_1.DashboardModule,
+                sysrequirements_module_1.SysrequirementsModule,
+                reviews_module_1.ReviewsModule,
                 forms_1.FormsModule,
                 http_1.HttpModule,
-                core_module_1.CoreModule
+                core_module_1.CoreModule,
             ],
             providers: [],
             bootstrap: [app_component_1.AppComponent]
