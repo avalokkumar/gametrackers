@@ -1,0 +1,48 @@
+.tools {
+  margin-top: 8px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.delete {
+  display: block;
+  background-color: #ec4342;
+  padding: 4px;
+  font-size: .8em;
+  border-radius: 4px;
+  color: #ffffff;
+  cursor: pointer;
+}
+.details {
+  display: block;
+  background-color: #37ad79;
+  padding: 4px;
+  font-size: .8em;
+  border-radius: 4px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.game-view{
+  display: block;
+  border: solid 0.2em crimson;
+  width: 20em;
+  height: 13em;
+  border-radius: 1em;
+  padding: 1em;
+}
+
+body{
+  line-height: 0px !important;
+}
+
+.panel-success{
+  width: 20em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.container-fluid{
+  margin-left: 45px;
+  margin-right: inherit;
+}

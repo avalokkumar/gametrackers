@@ -4,8 +4,8 @@ import { Component } from '@angular/core';
   selector: 'page-404',
   template: `
     <article class="template animated slideInRight">
-      <h4>Inconceivable!</h4>
-      <div>I do not think this page is where you think it is.</div>
+      <h1>404 Error!</h1>
+      <h2>I THINK THIS IS NOT THE PLACE WHERE YOU WANT TO BE!</h2>
     </article>
   `
 })

@@ -16,7 +16,8 @@ const routes: Routes = [
   {path: 'dashboard', component: DashboardComponent},
   {path: 'login', component: LoginComponent},
   {path: 'games', component: GamesComponent},
-  {path: 'games/:id', component: GameComponent},
+  {path: 'game', component: GameComponent},
+  /*{path: 'games/:id', component: GameComponent},*/
   {path: 'reviews', component: ReviewsComponent},
   {path: 'reviews/:id', component: ReviewComponent},
   {path: 'sysrequirements', component: SysrequirementsComponent},

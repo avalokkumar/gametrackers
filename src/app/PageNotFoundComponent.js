@@ -12,7 +12,7 @@ var PageNotFoundComponent = (function () {
     PageNotFoundComponent = __decorate([
         core_1.Component({
             selector: 'page-404',
-            template: "\n    <article class=\"template animated slideInRight\">\n      <h4>Inconceivable!</h4>\n      <div>I do not think this page is where you think it is.</div>\n    </article>\n  "
+            template: "\n    <article class=\"template animated slideInRight\">\n      <h1>404 Error!</h1>\n      <h2>I THINK THIS IS NOT THE PLACE WHERE YOU WANT TO BE!</h2>\n    </article>\n  "
         })
     ], PageNotFoundComponent);
     return PageNotFoundComponent;

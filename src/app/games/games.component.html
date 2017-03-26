@@ -1,47 +1,17 @@
-<h1>Games List</h1>
-<div>
-  <div class="row">
-    <div class="col-xs-4">
-      <img src="../assets/games/game1.jpeg" height="344" width="599"/>
+<h1 class="text-danger text-center">Games List</h1>
+<hr>
+<div class="container-fluid">
+  <a [routerLink]="['/game']" href="">
+    <div class="col-xs-4 col-md-4 col-lg-4 panel panel-success" *ngFor="let game of games">
+      <div class="panel-heading">
+        <h3 class="panel-title">{{game}}</h3>
+      </div>
+      <img src="../images/header1.png" alt="" class="img-thumbnail">
+      <div class="panel-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquid animi
+          deleniti doloribus facilis iste laboriosam, modi quos reiciendis repellendus sed vel voluptatem,
+          voluptatum. Aperiam id modi quae quod voluptates.</p>
+      </div>
     </div>
-    <div class="col-xs-4">
-      <img src="../assets/games/game2.jpg" height="444" width="786"/>
-    </div>
-    <div class="col-xs-4">
-      <img src="../assets/games/game3.png"/>
-    </div>
-    <div class="col-xs-4">
-      <img src="../assets/games/game4.jpg" height="309" width="540"/>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-xs-4">
-
-    </div>
-    <div class="col-xs-4">
-
-    </div>
-    <div class="col-xs-4">
-
-    </div>
-    <div class="col-xs-4">
-
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-xs-4">
-
-    </div>
-    <div class="col-xs-4">
-
-    </div>
-    <div class="col-xs-4">
-
-    </div>
-    <div class="col-xs-4">
-
-    </div>
-  </div>
+  </a>
 </div>

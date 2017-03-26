@@ -7,7 +7,6 @@ import {FooterComponent} from "./core/footer/footer.component";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Gametracker';
 
   openWindow(){
     console.log("Open a window");

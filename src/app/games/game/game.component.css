@@ -1,0 +1,10 @@
+.gameImg{
+  border: solid 0.2em #37ad79;
+  border-radius: 1em;
+  height: 30em;
+}
+
+.gameDetails{
+  background-color: black;
+  font-family: sans-serif;
+}
