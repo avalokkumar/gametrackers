@@ -6,6 +6,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require('@angular/core');
+var games_service_1 = require("../shared/games.service");
 var GameComponent = (function () {
     function GameComponent() {
     }
@@ -15,7 +16,8 @@ var GameComponent = (function () {
         core_1.Component({
             selector: 'app-game',
             templateUrl: './game.component.html',
-            styleUrls: ['./game.component.css']
+            styleUrls: ['./game.component.css'],
+            providers: [games_service_1.GamesService]
         })
     ], GameComponent);
     return GameComponent;

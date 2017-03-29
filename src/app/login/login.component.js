@@ -6,20 +6,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require('@angular/core');
-var common_1 = require('@angular/common');
-var game_component_1 = require('./game/game.component');
-var GamesModule = (function () {
-    function GamesModule() {
+var LoginComponent = (function () {
+    function LoginComponent() {
     }
-    GamesModule = __decorate([
-        core_1.NgModule({
-            imports: [
-                common_1.CommonModule,
-            ],
-            declarations: [game_component_1.GameComponent],
-            providers: []
+    LoginComponent.prototype.ngOnInit = function () {
+        this.credentials = {
+            username: 'abc',
+            email: 'abc@abc.com',
+            pwd: '@bc'
+        };
+    };
+    LoginComponent = __decorate([
+        core_1.Component({
+            selector: 'app-login',
+            templateUrl: './login.component.html',
+            styleUrls: ['./login.component.css']
         })
-    ], GamesModule);
-    return GamesModule;
+    ], LoginComponent);
+    return LoginComponent;
 }());
-exports.GamesModule = GamesModule;
+exports.LoginComponent = LoginComponent;

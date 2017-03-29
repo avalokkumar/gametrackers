@@ -1,0 +1,136 @@
+{
+"data": [
+          {
+            "id": "game1",
+            "Name": "Watch Dogs 2",
+            "Release-Date": " 2016. November 29",
+            "Genre": ["Action", "Adventure"],
+            "Developer": "Ubisoft Montreal",
+            "Publisher": "Ubisoft",
+            "Minimum-System-Requirements":{
+              "Category": "Min",
+              "CPU": "Intel Core i5 2400s @ 2.5 GHz, AMD FX 6120 @ 3.5 GHz or better",
+              "RAM": "6 GB RAM",
+              "GPU": "NVIDIA GeForce GTX 660 with 2 GB VRAM or AMD Radeon HD 7870, with 2 GB VRAM or better",
+              "OS": ["Windows 7 SP1", "Windows 8.1", "Windows 10 (64bit versions only)"],
+              "Store": "50 GB available space",
+              "Sound": "DirectX compatible using the latest drivers",
+              "Network": "Broadband Internet connection"
+            },
+            "Recommended-System-Requirements":{
+              "Category": "Recommended",
+              "CPU": "Intel Core i5 3470 @ 3.2 GHz, AMD FX 8120 @ 3.9 GHz",
+              "RAM": "8 GB RAM",
+              "GPU": "NVIDIA GeForce GTX 780 | AMD Radeon R9 290, with 3GB VRAM or better",
+              "OS": ["Windows 7 SP1", "Windows 8.1", "Windows 10 (64bit versions only)"],
+              "Store": "50 GB available space",
+              "Sound": "DirectX compatible using the latest drivers",
+              "Network": "Broadband Internet connection"
+
+            }
+          },
+          {
+            "id": "game2",
+            "Name": "Battlefield 1",
+            "Release-Date": "2016. October 21",
+            "Genre": ["FPS"],
+            "Developer": "DICE",
+            "Publisher": "Electronic Arts",
+            "Minimum-System-Requirements":{
+              "Category": "Min",
+              "CPU": "AMD FX-6350 / Core i5 6600K",
+              "RAM": "8 GB RAM",
+              "DX": "11.0 Compatible video card or equivalent",
+              "GPU": "AMD Radeon HD 7850 2GB / nVidia GeForce GTX 660 2GB",
+              "OS": ["Windows 7 SP1", "Windows 8.1", "Windows 10"],
+              "Store": "50 GB available space",
+              "Network": "512 KBPS or faster Internet connection"
+            },
+            "Recommended-System-Requirements":{
+              "Category": "Recommended",
+              "CPU": "AMD FX 8350 Wraith / Intel Core i7 4790 or equivalent",
+              "RAM": "16 GB RAM",
+              "DX": "11.0 Compatible video card or equivalent",
+              "GPU": "NVIDIA GeForce GTX 780 | AMD Radeon R9 290, with 3GB VRAM or better",
+              "OS": ["64-bit Windows 10 or later"],
+              "Store": "50 GB available space",
+              "Network": "512 KBPS or faster Internet connection"
+
+            }
+          },
+          {
+            "id": "game3",
+            "Name": "Grand Theft Auto V",
+            "Release-Date": "2015. April 14",
+            "Genre": ["Action", "Adventure"],
+            "Developer": "Rockstar North",
+            "Publisher": "Rockstar Games",
+            "Minimum-System-Requirements":{
+              "Category": "Min",
+              "CPU": "Intel Core 2 Quad CPU Q6600 @ 2.40GHz (4 CPUs) / AMD Phenom 9850 Quad-Core Processor (4 CPUs) @ 2.5GHz",
+              "RAM": "4 GB RAM",
+              "DX": "10",
+              "GPU": "NVIDIA 9800 GT 1GB / AMD HD 4870 1GB (DX 10, 10.1, 11)",
+              "OS": ["Windows 8.1 64 Bit", "Windows 8 64 Bit", "Windows 7 64 Bit Service Pack 1", "Windows Vista 64 Bit Service Pack 2"],
+              "Store": "65 GB available space",
+              "Sound": "100% DirectX 10 compatible"
+            },
+            "Recommended-System-Requirements":{
+              "Category": "Recommended",
+              "CPU": "Intel Core i5 3470 @ 3.2GHZ (4 CPUs) / AMD X8 FX-8350 @ 4GHZ (8 CPUs)",
+              "RAM": "8 GB RAM",
+              "DX": "10",
+              "GPU": "NVIDIA GTX 660 2GB / AMD HD7870 2GB",
+              "OS": ["Windows 8.1 64 Bit", "Windows 8 64 Bit", "Windows 7 64 Bit Service Pack 1"],
+              "Store": "65 GB available space",
+              "Sound": "100% DirectX 10 compatible"
+            }
+          },
+          {
+            "id": "game4",
+            "Name": "Counter-Strike: Global Offensive",
+            "Release-Date": "2012. August 21",
+            "Genre": ["Action", "FPS"],
+            "Developer": "Valve",
+            "Publisher": "Valve",
+            "Minimum-System-Requirements":{
+              "Category": "Min",
+              "CPU": "Intel® Core™ 2 Duo E6600 or AMD Phenom™ X3 8750 processor or better",
+              "RAM": "2 GB RAM",
+              "DX": "DirectX 9.0c",
+              "GPU": "Video card must be 256 MB or more and should be a DirectX 9-compatible with support for Pixel Shader 3.0",
+              "OS": ["Windows® 7", "Windows Vista", "Windows XP"],
+              "Store": "15 GB available space"
+            },
+            "Recommended-System-Requirements":{
+              "Category": "Recommended"
+            }
+          },
+          {
+            "id": "game5",
+            "Name": "Crysis 3",
+            "Release-Date": "2013. February 15",
+            "Genre": ["Action", "FPS"],
+            "Developer": "Crytek",
+            "Publisher": "Electronic Arts",
+            "Minimum-System-Requirements":{
+              "Category": "Min",
+              "CPU": "Intel Core2 Duo 2.4 Ghz (E6600) / AMD Athlon64 X2 2.7 Ghz (5200+)",
+              "RAM": "2GB Memory (3GB on Vista)",
+              "DX": "Directx 11",
+              "GPU": "DirectX 11 graphics card with 1Gb Video RAM, Nvidia GTS 450 / AMD Radeon HD5770",
+              "OS": ["Windows Vista", "Windows 7", "Windows 8"],
+              "Store": "At least 17 GB of free space"
+            },
+            "Recommended-System-Requirements":{
+              "Category": "Recommended",
+              "CPU": "2.4 GHz Intel Core i5-750 / 2.7 GHz AMD Phenom II X4 805",
+              "RAM": "4GB Memory (3GB on Vista)",
+              "DX": "Directx 11",
+              "GPU": "DirectX 11 graphics card with 1GB Video RAM, Nvidia GTX 560 / AMD Radeon HD5870",
+              "OS": ["Windows Vista", "Windows 7", "Windows 8"],
+              "Store": "At least 17 GB of free space"
+            }
+          }
+    ]
+}
