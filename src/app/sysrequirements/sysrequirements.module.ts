@@ -6,6 +6,6 @@ import { SysrequirementComponent } from './sysrequirement/sysrequirement.compone
   imports: [
     CommonModule
   ],
-  declarations: [SysrequirementComponent]
+  declarations: []
 })
 export class SysrequirementsModule { }

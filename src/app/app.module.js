@@ -29,6 +29,7 @@ var dashboard_module_1 = require("./dashboard/dashboard.module");
 var sysrequirements_module_1 = require("./sysrequirements/sysrequirements.module");
 var reviews_module_1 = require("./reviews/reviews.module");
 var footer_component_1 = require("./core/footer/footer.component");
+var sysrequirement_component_1 = require("./sysrequirements/sysrequirement/sysrequirement.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -45,6 +46,7 @@ var AppModule = (function () {
                 shared_component_1.SharedComponent,
                 user_component_1.UserComponent,
                 core_component_1.CoreComponent,
+                sysrequirement_component_1.SysrequirementComponent,
                 sysrequirements_component_1.SysrequirementsComponent,
                 nav_component_1.NavComponent,
                 PageNotFoundComponent_1.PageNotFoundComponent,

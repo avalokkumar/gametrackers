@@ -6,18 +6,18 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require('@angular/core');
-var common_1 = require('@angular/common');
-var SysrequirementsModule = (function () {
-    function SysrequirementsModule() {
+var SysrequirementsComponent = (function () {
+    function SysrequirementsComponent() {
     }
-    SysrequirementsModule = __decorate([
-        core_1.NgModule({
-            imports: [
-                common_1.CommonModule
-            ],
-            declarations: []
+    SysrequirementsComponent.prototype.ngOnInit = function () {
+    };
+    SysrequirementsComponent = __decorate([
+        core_1.Component({
+            selector: 'app-sysrequirements',
+            templateUrl: './sysrequirements.component.html',
+            styleUrls: ['./sysrequirements.component.css']
         })
-    ], SysrequirementsModule);
-    return SysrequirementsModule;
+    ], SysrequirementsComponent);
+    return SysrequirementsComponent;
 }());
-exports.SysrequirementsModule = SysrequirementsModule;
+exports.SysrequirementsComponent = SysrequirementsComponent;

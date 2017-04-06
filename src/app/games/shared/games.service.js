@@ -14,8 +14,12 @@ var GamesService = (function () {
         console.log('GamesService Initiated');
     }
     GamesService.prototype.getAllGames = function () {
-        return this.http.get('data/games-data.json')
+        return this.http.get('src/data/games-data.json')
             .map(function (response) { return response.json().data; })
+            .do(function (data) {
+            console.log('Data incoming');
+            console.log(data);
+        })
             .catch(this.handleErrors);
     };
     GamesService.prototype.handleErrors = function (error) {

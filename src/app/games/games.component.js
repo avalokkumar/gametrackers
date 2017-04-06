@@ -15,12 +15,13 @@ var GamesComponent = (function () {
     GamesComponent.prototype.ngOnInit = function () {
         //this.games = ["Crysis 3", "Medal Of Honour", "Half Life 3", "Grand Theft Auto V","Darksiders 3", "CS GO", "Need for Speed", "Uncharted 3"];
         this.retrieveGames();
-        console.log(this.games);
     };
     GamesComponent.prototype.retrieveGames = function () {
         var _this = this;
         this.gamesService.getAllGames()
-            .subscribe(function (games) { return _this.games = games; }, function (error) { return _this.errorMessage = error; });
+            .subscribe(function (games) { return _this.games = games; });
+        console.log('Inside Retrieve Games');
+        console.log(this.games);
     };
     GamesComponent = __decorate([
         core_1.Component({

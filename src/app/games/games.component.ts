@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {GamesService} from './shared/games.service';
+import {Game} from "./shared/game.model";
 
 @Component({
   selector: 'app-games',
@@ -8,7 +9,7 @@ import {GamesService} from './shared/games.service';
   providers: [GamesService]
 })
 export class GamesComponent implements OnInit {
-  games;
+  games: Game[];
   errorMessage;
   constructor(private gamesService: GamesService) { }
 
@@ -16,15 +17,13 @@ export class GamesComponent implements OnInit {
   ngOnInit() {
     //this.games = ["Crysis 3", "Medal Of Honour", "Half Life 3", "Grand Theft Auto V","Darksiders 3", "CS GO", "Need for Speed", "Uncharted 3"];
     this.retrieveGames();
-    console.log(this.games);
   }
 
   retrieveGames(){
     this.gamesService.getAllGames()
-      .subscribe(
-        games => this.games = games,
-        error => this.errorMessage = <any>error
-      )
+      .subscribe(games => this.games = games);
+    console.log('Inside Retrieve Games');
+    console.log(this.games)
   }
 
 }

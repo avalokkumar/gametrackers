@@ -1,11 +1,13 @@
 import {SysRequirement} from "../../sysrequirements/shared/sysrequirement.model";
 
 export class Game{
+  id: string;
   name: string;
-  releaseDate: string;
+  release_date: string;
   genre: string;
   developer: string;
   publisher: string;
-  minSysReq: SysRequirement;
-  recommendedSysReq: SysRequirement;
+  img_url: string;
+  minimum_system_requirements: SysRequirement;
+  recommended_system_requirements: SysRequirement;
 }

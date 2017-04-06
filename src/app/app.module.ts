@@ -22,6 +22,7 @@ import {DashboardModule} from "./dashboard/dashboard.module";
 import {SysrequirementsModule} from "./sysrequirements/sysrequirements.module";
 import {ReviewsModule} from "./reviews/reviews.module";
 import {FooterComponent} from "./core/footer/footer.component";
+import {SysrequirementComponent} from "./sysrequirements/sysrequirement/sysrequirement.component";
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import {FooterComponent} from "./core/footer/footer.component";
     SharedComponent,
     UserComponent,
     CoreComponent,
+    SysrequirementComponent,
     SysrequirementsComponent,
     NavComponent,
     PageNotFoundComponent,

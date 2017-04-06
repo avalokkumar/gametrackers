@@ -1,17 +1,39 @@
-<h1 class="text-danger text-center">Games List</h1>
+<h2 class="text-danger text-center">Games List</h2>
 <hr>
 <div class="container-fluid">
-  <a [routerLink]="['/game']" href="">
-    <div class="col-xs-4 col-md-4 col-lg-4 panel panel-success" *ngFor="let game of games">
-      <div class="panel-heading">
-        <h3 class="panel-title">{{game}}</h3>
+    <div class="header">
+    <div>
+      <div class="col-xs-4 col-md-4 game-list-menu">
+        <div class="panel panel-default">
+          <div class="panel-heading">Games List</div>
+          <div class="panel-body" >
+            <div class="list-group">
+              <a href="#" class="list-group-item" *ngFor="let game of games">
+                {{game.name}}
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-      <img src="./assets/games/game1.jpeg" alt="" class="img-thumbnail">
-      <div class="panel-body text-warning">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquid animi
-          deleniti doloribus facilis iste laboriosam, modi quos reiciendis repellendus sed vel voluptatem,
-          voluptatum. Aperiam id modi quae quod voluptates.
+      <div class="col-xs-8 col-md-8 game-list">
+        <ul class="game-list">
+        <li class="col-xs-4 col-md-4 col-lg-4 panel panel-success" *ngFor="let game of games">
+          <div class="panel-heading">
+            <h3 class="panel-title">{{game.name}}</h3>
+          </div>
+          <img src={{game.img_url}} alt="" class="img-thumbnail">
+          <div class="panel-body txtBody">
+            <strong class="panel-title">Developer: </strong>{{game.developer}}<br>
+            <strong class="panel-title">Publisher: </strong>{{game.publisher}}<br>
+            <strong class="panel-title">Genre: </strong>{{game.genre}}<br>
+            <strong class="panel-title">Release-Date: </strong>{{game.release_date | date}}<br>
+            <strong class="panel-title">Publisher: </strong>{{game.publisher}}
+            <hr>
+            <a [routerLink]="['/game']" href="">details...</a>
+          </div>
+        </li>
+        </ul>
       </div>
     </div>
-  </a>
+</div>
 </div>

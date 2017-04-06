@@ -37,12 +37,42 @@ body{
 }
 
 .panel-success{
-  width: 20em;
+  width: 19em;
   margin-left: 1em;
   margin-right: 1em;
 }
 
 .container-fluid{
-  margin-left: 45px;
+  margin-left: inherit;
   margin-right: inherit;
+}
+
+.game-list{
+  list-style-type: none;
+  padding: 0em;
+}
+
+.panel-title{
+  font-size: 1em;
+  text-align: center;
+  color: #0c1a1e;
+}
+
+.panel-heading{
+  padding: 0em;
+}
+
+.txtBody{
+  background-color: #3e4d52;
+}
+
+.row{
+  margin-top: 0em;
+}
+
+.game-list-menu{
+  background-color: #303030;
+  border-radius: 1em;
+  border: solid 0.2em darkcyan;
+  padding-top: 1em;
 }

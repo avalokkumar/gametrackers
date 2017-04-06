@@ -13,8 +13,12 @@ export class GamesService {
   }
 
   getAllGames(){
-    return this.http.get('data/games-data.json')
+    return this.http.get('src/data/games-data.json')
       .map((response: Response) => <Game[]>response.json().data)
+      .do((data) => {
+        console.log('Data incoming')
+        console.log(data)
+      })
       .catch(this.handleErrors);
   }
 

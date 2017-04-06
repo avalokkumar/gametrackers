@@ -4,7 +4,7 @@ export class SysRequirement{
   ram: string;
   gpu: string;
   os: string;
-  storage: string;
+  store: string;
   sound: string;
   network: string;
 }
