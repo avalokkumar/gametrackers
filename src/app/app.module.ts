@@ -23,6 +23,8 @@ import {SysrequirementsModule} from "./sysrequirements/sysrequirements.module";
 import {ReviewsModule} from "./reviews/reviews.module";
 import {FooterComponent} from "./core/footer/footer.component";
 import {SysrequirementComponent} from "./sysrequirements/sysrequirement/sysrequirement.component";
+import {AUTH_PROVIDERS} from 'angular2-jwt';
+import {Auth} from './login/auth/auth.service';
 
 @NgModule({
   declarations: [
@@ -53,7 +55,7 @@ import {SysrequirementComponent} from "./sysrequirements/sysrequirement/sysrequi
     HttpModule,
     CoreModule,
   ],
-  providers: [],
+  providers: [AUTH_PROVIDERS, Auth],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

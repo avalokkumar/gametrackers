@@ -7,17 +7,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 var core_1 = require('@angular/core');
 var NavComponent = (function () {
-    function NavComponent() {
+    function NavComponent(auth) {
+        this.auth = auth;
         this.title = 'Gametrackers';
-        this.gamesUrls = [
-            "../../images/header1.png",
-            "../../images/header2.jpg",
-            "../../images/header3.jpg",
-            "../../images/header4.jpg",
-            "../../images/header5.jpg",
-            "../../images/header6.jpg",
-            "../../images/header7.jpg"
-        ];
     }
     NavComponent.prototype.ngOnInit = function () {
     };

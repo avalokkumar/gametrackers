@@ -7,7 +7,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 var core_1 = require('@angular/core');
 var AppComponent = (function () {
-    function AppComponent() {
+    function AppComponent(auth) {
+        this.auth = auth;
     }
     AppComponent.prototype.openWindow = function () {
         console.log("Open a window");

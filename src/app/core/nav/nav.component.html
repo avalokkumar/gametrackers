@@ -18,14 +18,14 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Games <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Massively Multiplayer Online (MMO)</a></li>
-            <li><a href="#">Adventure</a></li>
-            <li><a href="#">Role-Playing (RPG)</a></li>
-            <li><a href="#">Action</a></li>
-            <li><a href="#">First Person Shooters (FPS)</a></li>
+            <li><a [routerLink]="['/games']" href="#">Massively Multiplayer Online (MMO)</a></li>
+            <li><a [routerLink]="['/games']" href="#">Adventure</a></li>
+            <li><a [routerLink]="['/games']" href="#">Role-Playing (RPG)</a></li>
+            <li><a [routerLink]="['/games']"href="#">Action</a></li>
+            <li><a [routerLink]="['/games']" href="#">First Person Shooters (FPS)</a></li>
             <li class="divider"></li>
-            <li><a href="#">Puzzle</a></li>
-            <li><a href="#">Educational</a></li>
+            <li><a [routerLink]="['/games']" href="#">Puzzle</a></li>
+            <li><a [routerLink]="['/games']" href="#">Educational</a></li>
             <li class="divider"></li>
             <li><a [routerLink]="['/games']" href="">All</a></li>
           </ul>
@@ -38,7 +38,12 @@
         <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Submit</button>
       </form>
       <div id="loginBtn" class="nav navbar-nav navbar-right">
-        <button [routerLink]="['/login']" type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Login</button>
+        <div href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" (click)="auth.login()" *ngIf="!auth.authenticated()">
+          Login</div>
+        <button [routerLink]="['/login']" type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" *ngIf="auth.authenticated()">
+          Profile</button>
+        <div href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" (click)="auth.logout()" *ngIf="auth.authenticated()">
+          Logout</div>
       </div>
     </div>
   </div>

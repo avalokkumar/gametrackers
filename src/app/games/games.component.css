@@ -76,3 +76,12 @@ body{
   border: solid 0.2em darkcyan;
   padding-top: 1em;
 }
+
+.customHeader{
+  font-size: 2em;
+  font-family: monospace;
+  color: aqua;
+}
+div.panel-heading{
+  padding: 0.5em;
+}

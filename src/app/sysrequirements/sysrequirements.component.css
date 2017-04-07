@@ -2,10 +2,65 @@
   height: 100%;
   width: 100%;
   background-color: #8f8f8f;
-  margin: 2em 0em 2em 0em;
+  margin: 2em 0.5em 2em 0.5em;
 }
 
 .reqform{
-  margin: 1em;
+  padding: 1em;
+  margin: 0.2em;
+  border-radius: 0.5em;
+  width: 33em;
 }
 
+.reqformMenu{
+  padding: 1em;
+  border: solid 0.2em #449d44;
+  margin: 0.2em;
+  border-radius: 1em;
+  background-color: #083E4B;
+  color: #0c1a1e;
+}
+
+.reqformContent{
+  padding: 1em;
+  border-radius: 1em;
+  background-color: #083E4B;
+  margin-left: 4em;
+}
+
+.panel-body{
+  padding: 1em;
+}
+
+li{
+  list-style: none;
+}
+
+.list-group{
+  margin-bottom: 2em;
+  margin-left: 0.8em;
+}
+
+td.list-group-item{
+  width: 22em;
+  background-color: #2AA198;
+  margin-top: 0.5em;
+  border-radius: 0.5em;
+}
+
+.customFont{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+
+.sysrow{
+  background-color: #696969;
+}
+
+tr.sysrow th{
+  color: #00bfff;
+}
+
+td{
+  color: #ffe4c4;
+}

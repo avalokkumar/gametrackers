@@ -30,6 +30,8 @@ var sysrequirements_module_1 = require("./sysrequirements/sysrequirements.module
 var reviews_module_1 = require("./reviews/reviews.module");
 var footer_component_1 = require("./core/footer/footer.component");
 var sysrequirement_component_1 = require("./sysrequirements/sysrequirement/sysrequirement.component");
+var angular2_jwt_1 = require('angular2-jwt');
+var auth_service_1 = require('./login/auth/auth.service');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -63,7 +65,7 @@ var AppModule = (function () {
                 http_1.HttpModule,
                 core_module_1.CoreModule,
             ],
-            providers: [],
+            providers: [angular2_jwt_1.AUTH_PROVIDERS, auth_service_1.Auth],
             bootstrap: [app_component_1.AppComponent]
         })
     ], AppModule);

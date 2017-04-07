@@ -6,16 +6,26 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require('@angular/core');
+var games_service_1 = require("../games/shared/games.service");
 var SysrequirementsComponent = (function () {
-    function SysrequirementsComponent() {
+    function SysrequirementsComponent(gamesService) {
+        this.gamesService = gamesService;
     }
     SysrequirementsComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.gamesService.getAllGames()
+            .subscribe(function (games) { return _this.games = games; });
+    };
+    SysrequirementsComponent.prototype.selectGame = function (game) {
+        console.log('Selected Game: ' + game.name);
+        this.selectedGame = game;
     };
     SysrequirementsComponent = __decorate([
         core_1.Component({
             selector: 'app-sysrequirements',
             templateUrl: './sysrequirements.component.html',
-            styleUrls: ['./sysrequirements.component.css']
+            styleUrls: ['./sysrequirements.component.css'],
+            providers: [games_service_1.GamesService]
         })
     ], SysrequirementsComponent);
     return SysrequirementsComponent;

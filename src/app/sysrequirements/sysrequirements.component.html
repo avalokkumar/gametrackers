@@ -1,11 +1,109 @@
-<div class="syscontainer">
-  <div class="row">
-  <div class="reqform col-lg-4 col-md-4">
-  </div>
-  <div class="reqform col-lg-4 col-md-4">
-    <p>
-      sysrequirements works!
-    </p>
-  </div>
-  </div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="reqformMenu col-lg-3 col-md-3">
+          <div class="list-group">
+            <tbody>
+            <tr>
+              <td (click)="selectGame(game)" class="list-group-item text-white customFont" *ngFor="let game of games">{{game.name}}</td>
+            </tr>
+            </tbody>
+          </div>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+            dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        </div>
+        <div class="reqformContent col-lg-8 col-md-8">
+          <div class="reqform col-lg-5 col-md-5">
+            <div class="panel panel-warning">
+              <div class="panel-heading">
+                <h3 class="panel-title text-center">Minimum System Requirement</h3>
+              </div>
+              <div class="panel-body">
+                <table class="table table-striped table-hover ">
+                    <tbody>
+                      <tr class="sysrow">
+                        <th>Category</th>
+                        <td>{{selectedGame?.minimum_system_requirements.category}}</td>
+                      </tr>
+                      <tr class="sysrow">
+                        <th>CPU</th>
+                        <td>{{selectedGame?.minimum_system_requirements.cpu}}</td>
+                      </tr>
+                      <tr class="sysrow">
+                        <th>RAM</th>
+                        <td>{{selectedGame?.minimum_system_requirements.ram}}</td>
+                      </tr>
+                      <tr class="sysrow">
+                        <th>GPU</th>
+                        <td>{{selectedGame?.minimum_system_requirements.gpu}}</td>
+                      </tr>
+                      <tr class="sysrow">
+                        <th>Operating System</th>
+                        <td>{{selectedGame?.minimum_system_requirements.os}}</td>
+                      </tr>
+                      <tr class="sysrow">
+                        <th>Store</th>
+                        <td>{{selectedGame?.minimum_system_requirements.store}}</td>
+                      </tr>
+                      <tr class="sysrow">
+                        <th>Sound</th>
+                        <td>{{selectedGame?.minimum_system_requirements.sound}}</td>
+                      </tr>
+                      <tr class="sysrow">
+                        <th>Network</th>
+                        <td>{{selectedGame?.minimum_system_requirements.network}}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="reqform col-lg-5 col-md-5">
+            <div class="panel panel-danger">
+              <div class="panel-heading">
+                <h3 class="panel-title text-center">Recommended System Requirement</h3>
+              </div>
+              <div class="panel-body">
+                <table class="table table-striped table-hover ">
+                  <tbody>
+                  <tr class="sysrow">
+                    <th>Category</th>
+                    <td>{{selectedGame?.recommended_system_requirements.category}}</td>
+                  </tr>
+                  <tr class="sysrow">
+                    <th>CPU</th>
+                    <td>{{selectedGame?.recommended_system_requirements.cpu}}</td>
+                  </tr>
+                  <tr class="sysrow">
+                    <th>RAM</th>
+                    <td>{{selectedGame?.recommended_system_requirements.ram}}</td>
+                  </tr>
+                  <tr class="sysrow">
+                    <th>GPU</th>
+                    <td>{{selectedGame?.recommended_system_requirements.gpu}}</td>
+                  </tr>
+                  <tr class="sysrow">
+                    <th>Operating System</th>
+                    <td>{{selectedGame?.recommended_system_requirements.os}}</td>
+                  </tr>
+                  <tr class="sysrow">
+                    <th>Store</th>
+                    <td>{{selectedGame?.recommended_system_requirements.store}}</td>
+                  </tr>
+                  <tr class="sysrow">
+                    <th>Sound</th>
+                    <td>{{selectedGame?.recommended_system_requirements.sound}}</td>
+                  </tr>
+                  <tr class="sysrow">
+                    <th>Network</th>
+                    <td>{{selectedGame?.recommended_system_requirements.network}}</td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
 </div>
