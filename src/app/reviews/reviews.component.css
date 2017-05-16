@@ -1,0 +1,38 @@
+.customHeader{
+  font-size: 2em;
+  font-family: monospace;
+  color: aqua;
+}
+
+.review-list-menu{
+  background-color: #303030;
+  border-radius: 1em;
+  border: solid 0.2em darkcyan;
+  padding-top: 1em;
+  width: 30em;
+}
+
+.review-list{
+  list-style-type: none;
+  border: 0.2em solid darkcyan;
+  border-radius: 1em;
+  padding: 0em;
+  margin: 0em 1em 1em 1em;
+}
+
+a.list-group-item{
+  background-color: slategray;
+  color: #09ffb2;
+  margin: 0em;
+  border-radius: 1em;
+  width: 25em;
+}
+
+.review-content{
+  margin-top: 1em;
+}
+
+.summary{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.7em;
+}

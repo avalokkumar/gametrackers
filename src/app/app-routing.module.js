@@ -16,17 +16,18 @@ var sysrequirements_component_1 = require("./sysrequirements/sysrequirements.com
 var sysrequirement_component_1 = require("./sysrequirements/sysrequirement/sysrequirement.component");
 var reviews_component_1 = require("./reviews/reviews.component");
 var review_component_1 = require("./reviews/review/review.component");
+var downloads_component_1 = require("./downloads/downloads.component");
 var routes = [
     { path: '', pathMatch: 'full', redirectTo: 'dashboard', },
     { path: 'dashboard', component: dashboard_component_1.DashboardComponent },
     { path: 'login', component: login_component_1.LoginComponent },
     { path: 'games', component: games_component_1.GamesComponent },
-    { path: 'game', component: game_component_1.GameComponent },
-    /*{path: 'games/:id', component: GameComponent},*/
+    { path: 'game/:id', component: game_component_1.GameComponent },
     { path: 'reviews', component: reviews_component_1.ReviewsComponent },
     { path: 'reviews/:id', component: review_component_1.ReviewComponent },
+    { path: 'downloads', component: downloads_component_1.DownloadsComponent },
     { path: 'sysrequirements', component: sysrequirements_component_1.SysrequirementsComponent },
-    { path: 'sysrequirements/:id', component: sysrequirement_component_1.SysrequirementComponent },
+    { path: 'sysrequirement', component: sysrequirement_component_1.SysrequirementComponent },
     { path: '**', pathMatch: 'full', component: PageNotFoundComponent_1.PageNotFoundComponent }
 ];
 var AppRoutingModule = (function () {

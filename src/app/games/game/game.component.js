@@ -8,9 +8,20 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var core_1 = require('@angular/core');
 var games_service_1 = require("../shared/games.service");
 var GameComponent = (function () {
-    function GameComponent() {
+    function GameComponent(route, gameService) {
+        this.route = route;
+        this.gameService = gameService;
     }
+    GameComponent.prototype.setSelectedGame = function () {
+        this.gameId = this.route.snapshot.params['id'];
+        this.gameService.getSelectedGame(this.gameId)
+            .subscribe();
+        this.selectedGame = this.gameService.selGame;
+        console.log(this.selectedGame);
+    };
     GameComponent.prototype.ngOnInit = function () {
+        this.setSelectedGame();
+        console.log(this.gameId);
     };
     GameComponent = __decorate([
         core_1.Component({

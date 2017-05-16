@@ -23,8 +23,9 @@ import {SysrequirementsModule} from "./sysrequirements/sysrequirements.module";
 import {ReviewsModule} from "./reviews/reviews.module";
 import {FooterComponent} from "./core/footer/footer.component";
 import {SysrequirementComponent} from "./sysrequirements/sysrequirement/sysrequirement.component";
-import {AUTH_PROVIDERS} from 'angular2-jwt';
+/*import {AUTH_PROVIDERS} from 'angular2-jwt';*/
 import {Auth} from './login/auth/auth.service';
+import { DownloadsComponent } from './downloads/downloads.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import {Auth} from './login/auth/auth.service';
     SysrequirementsComponent,
     NavComponent,
     PageNotFoundComponent,
-    FooterComponent
+    FooterComponent,
+    DownloadsComponent
   ],
   imports: [
     BrowserModule,
@@ -53,9 +55,9 @@ import {Auth} from './login/auth/auth.service';
     ReviewsModule,
     FormsModule,
     HttpModule,
-    CoreModule,
+    CoreModule
   ],
-  providers: [AUTH_PROVIDERS, Auth],
+  providers: [Auth],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -37,7 +37,7 @@ body{
 }
 
 .panel-success{
-  width: 19em;
+  width: 20em;
   margin-left: 1em;
   margin-right: 1em;
 }
@@ -75,6 +75,8 @@ body{
   border-radius: 1em;
   border: solid 0.2em darkcyan;
   padding-top: 1em;
+  width: 24em;
+  margin-right: 7em;
 }
 
 .customHeader{

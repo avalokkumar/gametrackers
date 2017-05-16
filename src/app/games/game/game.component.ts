@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, Input} from '@angular/core';
 import {GamesService} from "../shared/games.service";
 import {Game} from "../shared/game.model";
+import {ActivatedRoute} from "@angular/router";
 
 
 @Component({
@@ -10,8 +11,22 @@ import {Game} from "../shared/game.model";
   providers: [GamesService]
 })
 export class GameComponent implements OnInit {
-  game: Game;
+  gameId: string;
+  selectedGame: Game;
+
+  constructor(private route: ActivatedRoute, private gameService: GamesService){
+  }
+
+  setSelectedGame(){
+    this.gameId = this.route.snapshot.params['id'];
+    this.gameService.getSelectedGame(this.gameId)
+      .subscribe();
+    this.selectedGame = this.gameService.selGame;
+    console.log(this.selectedGame)
+  }
   ngOnInit() {
+    this.setSelectedGame();
+    console.log(this.gameId);
   }
 
 }

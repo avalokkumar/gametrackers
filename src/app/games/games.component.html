@@ -1,4 +1,4 @@
-<h2 class="text-danger text-center">Games List</h2>
+<h3 class="text-danger text-center">Games List</h3>
 <hr>
 <div class="container-fluid">
     <div class="header">
@@ -7,8 +7,8 @@
         <div class="panel panel-default">
           <div class="panel-heading customHeader text-center">Games List</div>
           <div class="panel-body" >
-            <div class="list-group">
-              <a href="#" class="list-group-item text-center" *ngFor="let game of games">
+            <div class="list-group" *ngFor="let game of games">
+              <a [routerLink]="['/game']" href="" class="list-group-item text-center">
                 {{game.name}}
               </a>
             </div>
@@ -19,7 +19,7 @@
         <ul class="game-list">
         <li class="col-xs-4 col-md-4 col-lg-4 panel panel-success" *ngFor="let game of games">
           <div class="panel-heading">
-            <h3 class="panel-title">{{game.name}}</h3>
+            <h2 class="panel-title">{{game.name}}</h2>
           </div>
           <img src={{game.img_url}} alt="" class="img-thumbnail">
           <div class="panel-body txtBody">
@@ -29,7 +29,7 @@
             <strong class="panel-title">Release-Date: </strong>{{game.release_date | date}}<br>
             <strong class="panel-title">Publisher: </strong>{{game.publisher}}
             <hr>
-            <a [routerLink]="['/game']" href="">details...</a>
+            <a [routerLink]="['/game', game.id]" href="">details...</a>
           </div>
         </li>
         </ul>

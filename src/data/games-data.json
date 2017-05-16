@@ -63,7 +63,7 @@
     {
       "id": "game3",
       "name": "Grand Theft Auto V",
-      "Release-Date": "14/04/2015-04-14",
+      "release_date": "2015-04-14",
       "genre": ["Action", "Adventure"],
       "developer": "Rockstar North",
       "publisher": "Rockstar Games",
@@ -92,7 +92,7 @@
     {
       "id": "game4",
       "name": "Counter-Strike: Global Offensive",
-      "Release-Date": "21/08/2012",
+      "release_date": "2012-08-21",
       "genre": ["Action", "FPS"],
       "developer": "Valve",
       "publisher": "Valve",
@@ -113,7 +113,7 @@
     {
       "id": "game5",
       "name": "Crysis 3",
-      "Release-Date": "15/02/2013",
+      "release_date": "2013-02-15",
       "genre": ["Action", "FPS"],
       "developer": "Crytek",
       "publisher": "Electronic Arts",

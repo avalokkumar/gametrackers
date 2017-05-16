@@ -30,8 +30,9 @@ var sysrequirements_module_1 = require("./sysrequirements/sysrequirements.module
 var reviews_module_1 = require("./reviews/reviews.module");
 var footer_component_1 = require("./core/footer/footer.component");
 var sysrequirement_component_1 = require("./sysrequirements/sysrequirement/sysrequirement.component");
-var angular2_jwt_1 = require('angular2-jwt');
+/*import {AUTH_PROVIDERS} from 'angular2-jwt';*/
 var auth_service_1 = require('./login/auth/auth.service');
+var downloads_component_1 = require('./downloads/downloads.component');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -52,7 +53,8 @@ var AppModule = (function () {
                 sysrequirements_component_1.SysrequirementsComponent,
                 nav_component_1.NavComponent,
                 PageNotFoundComponent_1.PageNotFoundComponent,
-                footer_component_1.FooterComponent
+                footer_component_1.FooterComponent,
+                downloads_component_1.DownloadsComponent
             ],
             imports: [
                 platform_browser_1.BrowserModule,
@@ -63,9 +65,9 @@ var AppModule = (function () {
                 reviews_module_1.ReviewsModule,
                 forms_1.FormsModule,
                 http_1.HttpModule,
-                core_module_1.CoreModule,
+                core_module_1.CoreModule
             ],
-            providers: [angular2_jwt_1.AUTH_PROVIDERS, auth_service_1.Auth],
+            providers: [auth_service_1.Auth],
             bootstrap: [app_component_1.AppComponent]
         })
     ], AppModule);

@@ -10,7 +10,7 @@ var angular2_jwt_1 = require('angular2-jwt');
 var Auth = (function () {
     function Auth() {
         // Configure Auth0
-        this.lock = new Auth0Lock('', '', {});
+        this.lock = new Auth0Lock('poGlo83EXV4Pu6LbrD2J7MmoEUOsxWLK', 'gametrackers.auth0.com', {});
         // Add callback for lock `authenticated` event
         this.lock.on("authenticated", function (authResult) {
             localStorage.setItem('id_token', authResult.idToken);
@@ -23,7 +23,6 @@ var Auth = (function () {
     Auth.prototype.authenticated = function () {
         // Check if there's an unexpired JWT
         // This searches for an item in localStorage with key == 'id_token'
-        console.log('Successfully Authenticated');
         return angular2_jwt_1.tokenNotExpired();
     };
     Auth.prototype.logout = function () {

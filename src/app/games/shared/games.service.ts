@@ -7,6 +7,7 @@ import {Game} from "./game.model";
 
 @Injectable()
 export class GamesService {
+  selGame: Game;
 
   constructor(private http: Http) {
     console.log('GamesService Initiated')
@@ -18,6 +19,21 @@ export class GamesService {
       .do((data) => {
         console.log('Data incoming')
         console.log(data)
+      })
+      .catch(this.handleErrors);
+  }
+
+  getSelectedGame(id){
+    return this.http.get('src/data/games-data.json')
+      .map((response: Response) => <Game[]>response.json().data)
+      .do((data) => {
+        console.log('Selected Games')
+        console.log(data)
+          data.forEach(function (game) {
+            if(game.id == id){
+              this.selGame = game;
+            }
+          })
       })
       .catch(this.handleErrors);
   }

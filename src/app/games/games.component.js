@@ -13,7 +13,6 @@ var GamesComponent = (function () {
     }
     //TODO: create service for loading games details
     GamesComponent.prototype.ngOnInit = function () {
-        //this.games = ["Crysis 3", "Medal Of Honour", "Half Life 3", "Grand Theft Auto V","Darksiders 3", "CS GO", "Need for Speed", "Uncharted 3"];
         this.retrieveGames();
     };
     GamesComponent.prototype.retrieveGames = function () {

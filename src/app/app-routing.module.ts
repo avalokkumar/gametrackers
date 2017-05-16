@@ -9,19 +9,20 @@ import {SysrequirementsComponent} from "./sysrequirements/sysrequirements.compon
 import {SysrequirementComponent} from "./sysrequirements/sysrequirement/sysrequirement.component";
 import {ReviewsComponent} from "./reviews/reviews.component";
 import {ReviewComponent} from "./reviews/review/review.component";
+import {DownloadsComponent} from "./downloads/downloads.component";
 
 
 const routes: Routes = [
-  {path: '', pathMatch:'full', redirectTo: 'dashboard',},
-  {path: 'dashboard', component: DashboardComponent},
-  {path: 'login', component: LoginComponent},
-  {path: 'games', component: GamesComponent},
-  {path: 'game', component: GameComponent},
-  /*{path: 'games/:id', component: GameComponent},*/
-  {path: 'reviews', component: ReviewsComponent},
-  {path: 'reviews/:id', component: ReviewComponent},
-  {path: 'sysrequirements', component: SysrequirementsComponent},
-  {path: 'sysrequirements/:id', component: SysrequirementComponent},
+  { path: '', pathMatch:'full', redirectTo: 'dashboard',},
+  { path: 'dashboard', component: DashboardComponent},
+  { path: 'login', component: LoginComponent},
+  { path: 'games', component: GamesComponent},
+  { path: 'game/:id', component: GameComponent},
+  { path: 'reviews', component: ReviewsComponent},
+  { path: 'reviews/:id', component: ReviewComponent},
+  { path: 'downloads', component: DownloadsComponent},
+  { path: 'sysrequirements', component: SysrequirementsComponent},
+  { path: 'sysrequirement', component: SysrequirementComponent},
   { path: '**', pathMatch: 'full', component: PageNotFoundComponent }
 ];
 

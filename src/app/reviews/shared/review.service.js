@@ -8,13 +8,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var core_1 = require('@angular/core');
 require('rxjs/add/operator/map');
 var rxjs_1 = require("rxjs");
-var GamesService = (function () {
-    function GamesService(http) {
+var ReviewService = (function () {
+    function ReviewService(http) {
         this.http = http;
-        console.log('GamesService Initiated');
     }
-    GamesService.prototype.getAllGames = function () {
-        return this.http.get('src/data/games-data.json')
+    ReviewService.prototype.getAllReviews = function () {
+        return this.http.get('src/data/games-review.json')
             .map(function (response) { return response.json().data; })
             .do(function (data) {
             console.log('Data incoming');
@@ -22,27 +21,13 @@ var GamesService = (function () {
         })
             .catch(this.handleErrors);
     };
-    GamesService.prototype.getSelectedGame = function (id) {
-        return this.http.get('src/data/games-data.json')
-            .map(function (response) { return response.json().data; })
-            .do(function (data) {
-            console.log('Selected Games');
-            console.log(data);
-            data.forEach(function (game) {
-                if (game.id == id) {
-                    this.selGame = game;
-                }
-            });
-        })
-            .catch(this.handleErrors);
-    };
-    GamesService.prototype.handleErrors = function (error) {
+    ReviewService.prototype.handleErrors = function (error) {
         console.log("Error Occured " + error);
         return rxjs_1.Observable.throw(error.json().error || 'Server Error Occurred');
     };
-    GamesService = __decorate([
+    ReviewService = __decorate([
         core_1.Injectable()
-    ], GamesService);
-    return GamesService;
+    ], ReviewService);
+    return ReviewService;
 }());
-exports.GamesService = GamesService;
+exports.ReviewService = ReviewService;
