@@ -12,5 +12,3 @@ notifications:
 
 install:
   - npm install
-script:
-  - npm test
