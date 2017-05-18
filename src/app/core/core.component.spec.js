@@ -1,17 +1,17 @@
 "use strict";
-describe('GameComponent', function () {
-    /*let component: GameComponent;
-    let fixture: ComponentFixture<GameComponent>;
+describe('CoreComponent', function () {
+    /*let component: CoreComponent;
+    let fixture: ComponentFixture<CoreComponent>;
   
     beforeEach(async(() => {
       TestBed.configureTestingModule({
-        declarations: [ GameComponent ]
+        declarations: [ CoreComponent ]
       })
       .compileComponents();
     }));
   
     beforeEach(() => {
-      fixture = TestBed.createComponent(GameComponent);
+      fixture = TestBed.createComponent(CoreComponent);
       component = fixture.componentInstance;
       fixture.detectChanges();
     });

@@ -10,7 +10,7 @@ var angular2_jwt_1 = require('angular2-jwt');
 var Auth = (function () {
     function Auth() {
         // Configure Auth0
-        this.lock = new Auth0Lock('', '', {});
+        this.lock = new Auth0Lock('poGlo83EXV4Pu6LbrD2J7MmoEUOsxWLK', 'gametrackers.auth0.com', {});
         // Add callback for lock `authenticated` event
         this.lock.on("authenticated", function (authResult) {
             localStorage.setItem('id_token', authResult.idToken);
