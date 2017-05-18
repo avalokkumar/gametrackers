@@ -17,13 +17,12 @@
   border: 0.2em solid darkcyan;
   border-radius: 1em;
   padding: 0em;
-  margin: 0em 1em 1em 1em;
+  margin: 0em 0.5em 1em 0.5em;
 }
 
 a.list-group-item{
   background-color: slategray;
   color: #09ffb2;
-  margin: 0em;
   border-radius: 1em;
   width: 25em;
 }
@@ -34,5 +33,16 @@ a.list-group-item{
 
 .summary{
   font-family: 'Open Sans', sans-serif;
-  font-size: 0.7em;
+  color: #0c1a1e;
+  font-size: 0.8em;
+}
+
+.demo-card-square.mdl-card {
+  width: auto;
+  height: auto;
+}
+.demo-card-square > .mdl-card__title {
+  color: #fff;
+  background: white;
+    /*url('../assets/demos/dog.png') bottom right 15% no-repeat #46B6AC;*/
 }

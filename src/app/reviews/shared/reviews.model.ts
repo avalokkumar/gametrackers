@@ -10,6 +10,7 @@ export class Reviews{
   summary: string;
   metascore: number;
   user_score: number;
+  img_url: string;
   critic_review: Review[];
   user_review: Review[];
 }

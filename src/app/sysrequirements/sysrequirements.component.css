@@ -64,3 +64,9 @@ tr.sysrow th{
 td{
   color: #ffe4c4;
 }
+
+.panel-success{
+  width: 30em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
