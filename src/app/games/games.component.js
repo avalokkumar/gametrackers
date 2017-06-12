@@ -15,6 +15,11 @@ var GamesComponent = (function () {
     GamesComponent.prototype.ngOnInit = function () {
         this.retrieveGames();
     };
+    GamesComponent.prototype.showMsg = function () {
+        var _this = this;
+        this.gamesService.getMessage()
+            .subscribe(function (msg) { return _this.message = msg; });
+    };
     GamesComponent.prototype.retrieveGames = function () {
         var _this = this;
         this.gamesService.getAllGames()

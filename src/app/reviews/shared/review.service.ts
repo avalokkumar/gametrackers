@@ -10,8 +10,8 @@ export class ReviewService {
   constructor(private http: Http) { }
 
   getAllReviews(){
-    return this.http.get('src/data/games-review.json')
-      .map((response: Response) => <Reviews[]>response.json().data)
+    return this.http.get('http://localhost:3000/api/review')
+      .map((response: Response) => JSON.parse(response.text()).data)
       .do((data) => {
         console.log('Data incoming')
         console.log(data)

@@ -7,7 +7,7 @@
       "genre": ["Action", "Adventure"],
       "developer": "Ubisoft Montreal",
       "publisher": "Ubisoft",
-      "img_url": "/src/app/assets/games/watch_dogs_2.jpg",
+      "img_url": "../assets/games/watch_dogs_2.jpg",
       "minimum_system_requirements":{
         "category": "Min",
         "cpu": "Intel Core i5 2400s @ 2.5 GHz, AMD FX 6120 @ 3.5 GHz or better",
@@ -37,7 +37,7 @@
       "genre": ["FPS"],
       "developer": "DICE",
       "publisher": "Electronic Arts",
-      "img_url": "/src/app/assets/games/Battlefield_1.jpg",
+      "img_url": "../assets/games/Battlefield_1.jpg",
       "minimum_system_requirements":{
         "category": "Min",
         "cpu": "AMD FX-6350 / Core i5 6600K",
@@ -67,7 +67,7 @@
       "genre": ["Action", "Adventure"],
       "developer": "Rockstar North",
       "publisher": "Rockstar Games",
-      "img_url": "/src/app/assets/games/GTA_V_Game.jpg",
+      "img_url": "../assets/games/GTA_V_Game.jpg",
       "minimum_system_requirements":{
         "category": "Min",
         "cpu": "Intel Core 2 Quad cpu Q6600 @ 2.40GHz (4 CPUs) / AMD Phenom 9850 Quad-Core Processor (4 CPUs) @ 2.5GHz",
@@ -96,7 +96,7 @@
       "genre": ["Action", "FPS"],
       "developer": "Valve",
       "publisher": "Valve",
-      "img_url": "/src/app/assets/games/CSGO.jpg",
+      "img_url": "../assets/games/CSGO.jpg",
       "minimum_system_requirements":{
         "category": "Min",
         "cpu": "Intel® Core™ 2 Duo E6600 or AMD Phenom™ X3 8750 processor or better",
@@ -117,7 +117,7 @@
       "genre": ["Action", "FPS"],
       "developer": "Crytek",
       "publisher": "Electronic Arts",
-      "img_url": "/src/app/assets/games/crysis_3.jpg",
+      "img_url": "../assets/games/crysis_3.jpg",
       "minimum_system_requirements":{
         "category": "Min",
         "cpu": "Intel Core2 Duo 2.4 Ghz (E6600) / AMD Athlon64 X2 2.7 Ghz (5200+)",

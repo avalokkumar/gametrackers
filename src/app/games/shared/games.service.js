@@ -13,9 +13,17 @@ var GamesService = (function () {
         this.http = http;
         console.log('GamesService Initiated');
     }
+    GamesService.prototype.getMessage = function () {
+        return this.http.get('http://localhost:3000/api')
+            .map(function (response) { return response.text(); })
+            .do(function (data) {
+            console.log('Data : ' + data);
+        })
+            .catch(this.handleErrors);
+    };
     GamesService.prototype.getAllGames = function () {
-        return this.http.get('src/data/games-data.json')
-            .map(function (response) { return response.json().data; })
+        return this.http.get('http://localhost:3000/api/games')
+            .map(function (response) { return JSON.parse(response.text()).data; })
             .do(function (data) {
             console.log('Data incoming');
             console.log(data);
@@ -37,7 +45,7 @@ var GamesService = (function () {
             .catch(this.handleErrors);
     };
     GamesService.prototype.handleErrors = function (error) {
-        console.log("Error Occured " + error);
+        console.log("Error Occured :: " + error);
         return rxjs_1.Observable.throw(error.json().error || 'Server Error Occurred');
     };
     GamesService = __decorate([

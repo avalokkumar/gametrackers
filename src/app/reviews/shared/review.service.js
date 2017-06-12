@@ -13,8 +13,8 @@ var ReviewService = (function () {
         this.http = http;
     }
     ReviewService.prototype.getAllReviews = function () {
-        return this.http.get('src/data/games-review.json')
-            .map(function (response) { return response.json().data; })
+        return this.http.get('http://localhost:3000/api/review')
+            .map(function (response) { return JSON.parse(response.text()).data; })
             .do(function (data) {
             console.log('Data incoming');
             console.log(data);

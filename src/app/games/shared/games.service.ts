@@ -12,10 +12,17 @@ export class GamesService {
   constructor(private http: Http) {
     console.log('GamesService Initiated')
   }
-
+  getMessage(){
+    return this.http.get('http://localhost:3000/api')
+      .map((response: Response) => response.text())
+      .do((data) => {
+        console.log('Data : '+ data);
+      })
+      .catch(this.handleErrors);
+  }
   getAllGames(){
-    return this.http.get('src/data/games-data.json')
-      .map((response: Response) => <Game[]>response.json().data)
+    return this.http.get('http://localhost:3000/api/games')
+      .map((response: Response) => JSON.parse(response.text()).data)
       .do((data) => {
         console.log('Data incoming')
         console.log(data)
@@ -29,17 +36,17 @@ export class GamesService {
       .do((data) => {
         console.log('Selected Games')
         console.log(data)
-          data.forEach(function (game) {
-            if(game.id == id){
-              this.selGame = game;
-            }
-          })
+        data.forEach(function (game) {
+          if(game.id == id){
+            this.selGame = game;
+          }
+        })
       })
       .catch(this.handleErrors);
   }
 
   handleErrors(error:Response){
-    console.log("Error Occured "+error);
+    console.log("Error Occured :: "+error);
     return Observable.throw(error.json().error || 'Server Error Occurred');
   }
 

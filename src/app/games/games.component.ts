@@ -10,6 +10,7 @@ import {Game} from "./shared/game.model";
 })
 export class GamesComponent implements OnInit {
   games: Game[];
+  message: String;
 
   constructor(private gamesService: GamesService) { }
 
@@ -18,6 +19,10 @@ export class GamesComponent implements OnInit {
     this.retrieveGames();
   }
 
+  showMsg(){
+    this.gamesService.getMessage()
+      .subscribe(msg => this.message = msg);
+  }
   retrieveGames(){
     this.gamesService.getAllGames()
       .subscribe(games => this.games = games);

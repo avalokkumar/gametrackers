@@ -7,9 +7,8 @@
 
 .reqform{
   padding: 1em;
-  margin: 0.2em;
   border-radius: 0.5em;
-  width: 33em;
+  width: 31em;
 }
 
 .reqformMenu{
@@ -25,7 +24,7 @@
   padding: 1em;
   border-radius: 1em;
   background-color: #083E4B;
-  margin-left: 4em;
+  margin-left: 1em;
 }
 
 .panel-body{
@@ -34,11 +33,6 @@
 
 li{
   list-style: none;
-}
-
-.list-group{
-  margin-bottom: 2em;
-  margin-left: 0.8em;
 }
 
 td.list-group-item{
