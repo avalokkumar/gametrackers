@@ -13,11 +13,12 @@ var GameComponent = (function () {
         this.gameService = gameService;
     }
     GameComponent.prototype.setSelectedGame = function () {
+        var _this = this;
         this.gameId = this.route.snapshot.params['id'];
         this.gameService.getSelectedGame(this.gameId)
-            .subscribe();
-        this.selectedGame = this.gameService.selGame;
-        console.log(this.selectedGame);
+            .subscribe(function (games) { return _this.selectedGame = games[0]; });
+        // this.selectedGame = this.gameService.selGame;
+        /*console.log(this.selectedGame)*/
     };
     GameComponent.prototype.ngOnInit = function () {
         this.setSelectedGame();

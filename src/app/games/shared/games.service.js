@@ -31,16 +31,11 @@ var GamesService = (function () {
             .catch(this.handleErrors);
     };
     GamesService.prototype.getSelectedGame = function (id) {
-        return this.http.get('src/data/games-data.json')
-            .map(function (response) { return response.json().data; })
+        return this.http.get('http://localhost:3000/api/games/' + id)
+            .map(function (response) { return response.json(); })
             .do(function (data) {
             console.log('Selected Games');
             console.log(data);
-            data.forEach(function (game) {
-                if (game.id == id) {
-                    this.selGame = game;
-                }
-            });
         })
             .catch(this.handleErrors);
     };

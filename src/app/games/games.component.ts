@@ -23,6 +23,7 @@ export class GamesComponent implements OnInit {
     this.gamesService.getMessage()
       .subscribe(msg => this.message = msg);
   }
+
   retrieveGames(){
     this.gamesService.getAllGames()
       .subscribe(games => this.games = games);

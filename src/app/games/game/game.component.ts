@@ -11,7 +11,7 @@ import {ActivatedRoute} from "@angular/router";
   providers: [GamesService]
 })
 export class GameComponent implements OnInit {
-  gameId: string;
+  gameId: any;
   selectedGame: Game;
 
   constructor(private route: ActivatedRoute, private gameService: GamesService){
@@ -20,9 +20,9 @@ export class GameComponent implements OnInit {
   setSelectedGame(){
     this.gameId = this.route.snapshot.params['id'];
     this.gameService.getSelectedGame(this.gameId)
-      .subscribe();
-    this.selectedGame = this.gameService.selGame;
-    console.log(this.selectedGame)
+      .subscribe(games => this.selectedGame = games[0]);
+    // this.selectedGame = this.gameService.selGame;
+    /*console.log(this.selectedGame)*/
   }
   ngOnInit() {
     this.setSelectedGame();

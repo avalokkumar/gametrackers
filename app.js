@@ -15,10 +15,18 @@ app.use(function (req, res, next) {
   // Pass to next layer of middleware
   next();
 });
+app.get("/app", function(err, res) {
+  if(err){
+    console.log(err.message);
+  }
+  res.sendFile(__dirname + "/src/index.html");
+});
+
 app.get('/api', function (req, res) {
   res.send('Hello Clayman')
 })
 app.get('/api/games', route.getGameDetails);
+app.get('/api/games/:id', route.getGameDetailsById);
 app.get('/api/review', route.getReviewDetails);
 
 app.listen(3000, function(){

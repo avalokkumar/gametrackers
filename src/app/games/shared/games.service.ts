@@ -12,6 +12,7 @@ export class GamesService {
   constructor(private http: Http) {
     console.log('GamesService Initiated')
   }
+
   getMessage(){
     return this.http.get('http://localhost:3000/api')
       .map((response: Response) => response.text())
@@ -20,6 +21,7 @@ export class GamesService {
       })
       .catch(this.handleErrors);
   }
+
   getAllGames(){
     return this.http.get('http://localhost:3000/api/games')
       .map((response: Response) => JSON.parse(response.text()).data)
@@ -31,16 +33,11 @@ export class GamesService {
   }
 
   getSelectedGame(id){
-    return this.http.get('src/data/games-data.json')
-      .map((response: Response) => <Game[]>response.json().data)
+    return this.http.get('http://localhost:3000/api/games/'+id)
+      .map((response: Response) => response.json())
       .do((data) => {
-        console.log('Selected Games')
-        console.log(data)
-        data.forEach(function (game) {
-          if(game.id == id){
-            this.selGame = game;
-          }
-        })
+        console.log('Selected Games');
+        console.log(data);
       })
       .catch(this.handleErrors);
   }
