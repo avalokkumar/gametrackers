@@ -35,14 +35,14 @@
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Search">
         </div>
-        <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Submit</button>
+        <button type="submit" class="btn btn-primary">Submit</button>
       </form>
       <div id="loginBtn" class="nav navbar-nav navbar-right">
-        <div href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" (click)="auth.login()" *ngIf="!auth.authenticated()">
+        <div href="#" class="btn btn-primary" (click)="auth.login()" *ngIf="!auth.authenticated()">
           Login</div>
-        <button [routerLink]="['/login']" type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" *ngIf="auth.authenticated()">
+        <button [routerLink]="['/login']" type="submit" class="btn btn-primary" *ngIf="auth.authenticated()">
           Profile</button>
-        <div href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" (click)="auth.logout()" *ngIf="auth.authenticated()">
+        <div href="#" class="btn btn-primary" (click)="auth.logout()" *ngIf="auth.authenticated()">
           Logout</div>
       </div>
     </div>

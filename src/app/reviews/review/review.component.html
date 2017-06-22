@@ -1,3 +1,37 @@
-<p>
-  review works!
-</p>
+<div class="container-fluid">
+  <div class="row">
+    <div class="sideMenu col-md-3">
+      <div class="panel panel-default">
+        <div class="panel-heading">{{selectedGameReview.name}}</div>
+        <div class="panel-body">
+          <img src="{{selectedGameReview.img_url}}" alt="{{selectedGameReview.name}}">
+          <div class="content">
+            <span class="customTitle">Summary: </span><span class="customBody">{{selectedGameReview.summary}}</span><br>
+            <span class="customTitle">MetaScore: </span> <span class="customBody">{{selectedGameReview.metascore}}</span><br>
+            <span class="customTitle">User Score: </span><span class="customBody">{{selectedGameReview.user_score}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="reqSection col-md-8">
+      <div class="criticSec col-sm-6 col-md-6">
+        <div class="well well-sm text-center">Critic Reviews</div>
+        <div class="well" *ngFor="let creview of selectedGameReview.critic_reviews">
+          <span class="customTxt">Reviewer: </span><span class="customData">{{creview.reviewer}}</span><br>
+          <span class="customTxt">Score: </span><span class="customData">{{creview.reviewer_score}}</span><br>
+          <span class="customTxt">Review Date: </span><span class="customData">{{creview.review_date}}</span><br>
+          <span class="customTxt">Comment: </span><span class="customData">{{creview.comment}}</span>
+        </div>
+      </div>
+      <div class="userSec col-sm-6 col-md-6">
+        <div class="well well-sm text-center">User Reviews</div>
+        <div class="well" *ngFor="let ureview of selectedGameReview.user_reviews">
+          <span class="customTxt">Reviewer: </span><span class="customData">{{ureview.reviewer}}</span><br>
+          <span class="customTxt">Score: </span><span class="customData">{{ureview.reviewer_score}}</span><br>
+          <span class="customTxt">Review Date: </span><span class="customData">{{ureview.review_date}}</span><br>
+          <span class="customTxt">Comment: </span><span class="customData">{{ureview.comment}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

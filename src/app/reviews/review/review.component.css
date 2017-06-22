@@ -6,3 +6,86 @@ a.list-group-item.headMsg{
   color: #0BCBF0;
 }
 
+.sideMenu{
+  padding: 0em 0.4em 0.4em 0.4em;
+  margin: 0 0.5em 0.5em 0.5em;
+  width: 418px;
+  border-radius: 1em;
+  background-color: #3e4d52;
+}
+
+.reqSection{
+  border: solid #025aa5 0.2em;
+  padding: 1em;
+  margin: 0em 1em 0em 1em;
+  border-radius: 1em;
+  background-color: #3e4d52;
+}
+
+.criticSec{
+  /*margin: 0em 0.5em 0em 5em;*/
+}
+
+.userSec{
+  /*margin: 0em 0.5em 0em 0.5em;*/
+}
+
+.criticSec > .well-sm{
+  padding:0.5em;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #ec971f;
+}
+
+.userSec > .well-sm{
+  padding:0.5em;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #ec971f;
+}
+/*.userSec > .well-sm {
+  padding: 0em;
+}*/
+
+.panel-body > img{
+  padding: 1em;
+  display: block;
+  max-width:370px;
+  max-height:600px;
+  width: auto;
+  height: auto;
+}
+
+.content{
+  width: 24.5em;
+  margin-left: 1em;
+  background-color: #31708f;
+  padding: 1em;
+  border-radius: 1em;
+}
+.customTitle{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5em;
+  color: #ec971f;
+}
+.content > .customBody{
+  font-family: Serif;
+}
+
+.panel-default{
+  margin-top: 1em;
+}
+
+.customTxt{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5em;
+  color: #66afe9;
+}
+
+.customData{
+  font-family: monospace;
+  font-size: 1em;
+  color: whitesmoke;
+}

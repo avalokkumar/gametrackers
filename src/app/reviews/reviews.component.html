@@ -6,7 +6,7 @@
           <div class="panel-heading customHeader text-center">Games List</div>
           <div class="panel-body" >
             <div class="list-group" *ngFor="let review of allReviews">
-              <a [routerLink]="['/game']" href="" class="list-group-item text-center">
+              <a [routerLink]="['/review', review.id]" href="" class="list-group-item text-center">
                 <strong>{{review.name}}</strong>
               </a>
             </div>
@@ -31,7 +31,7 @@
                   <span class="text-info">User Score: </span>{{review.user_score}}/10
                 </div>
                 <div class="mdl-card__actions mdl-card--border">
-                  <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                  <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" [routerLink]="['/review', review.id]">
                     View Details
                   </a>
                 </div>

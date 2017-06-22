@@ -1,10 +1,40 @@
 .gameImg{
   border: solid 0.2em #37ad79;
   border-radius: 1em;
-  height: 30em;
+  height: 20em;
 }
 
 .gameDetails{
   background-color: black;
   font-family: sans-serif;
+}
+
+
+.panel-default > .panel-heading {
+  padding-top: -0.5em;
+  color: #0BCBF0;
+}
+
+.panel-default > h3{
+  padding: 0.5em;
+  margin: 0em;
+}
+
+.content{
+  padding: 1em;
+}
+
+.content span{
+  color: #ec971f;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5em;
+}
+
+.gameImg > img {
+  padding: 1em;
+  display: block;
+  max-width:450px;
+  max-height:620px;
+  width: auto;
+  height: auto;
 }

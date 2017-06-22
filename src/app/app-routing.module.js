@@ -24,7 +24,7 @@ var routes = [
     { path: 'games', component: games_component_1.GamesComponent },
     { path: 'game/:id', component: game_component_1.GameComponent },
     { path: 'reviews', component: reviews_component_1.ReviewsComponent },
-    { path: 'reviews/:id', component: review_component_1.ReviewComponent },
+    { path: 'review/:id', component: review_component_1.ReviewComponent },
     { path: 'downloads', component: downloads_component_1.DownloadsComponent },
     { path: 'sysrequirements', component: sysrequirements_component_1.SysrequirementsComponent },
     { path: 'sysrequirement', component: sysrequirement_component_1.SysrequirementComponent },

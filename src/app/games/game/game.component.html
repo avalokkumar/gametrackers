@@ -1,18 +1,20 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-4 gameImg">
-      <!--<img src="{{selectedGame.img_url}}" class="img img-responsive" alt="">-->
+      <img src="{{selectedGame.img_url}}" class="img img-responsive" alt="">
     </div>
     <div class="col-md-8">
       <div class="panel panel-default">
-        <div class="panel-heading">Game Details</div>
-        <div class="panel-body gameDetails">
-          <p>Game Developer: {{selectedGame?.developer}}</p>
-          <p>Game Genre: {{selectedGame?.genre}}</p>
-          <p>Game Name: {{selectedGame?.name}}</p>
-          <p>Game Publisher: {{selectedGame?.publisher}}</p>
-          <p>
-
+        <h3 class="panel-heading">Game Details</h3>
+        <div class="content">
+          <span>Game Developer</span>
+          <p class="well well-sm">{{selectedGame?.developer}}</p>
+          <span>Game Genre</span>
+          <p class="well well-sm">{{selectedGame?.genre}}</p>
+          <span>Game Name</span>
+          <p class="well well-sm">{{selectedGame?.name}}</p>
+          <span>Game Publisher</span>
+          <p class="well well-sm">{{selectedGame?.publisher}}</p>
         </div>
       </div>
     </div>

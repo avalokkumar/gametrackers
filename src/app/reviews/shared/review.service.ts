@@ -18,6 +18,15 @@ export class ReviewService {
       })
       .catch(this.handleErrors);
   }
+  getReviewById(gameId){
+    return this.http.get('http://localhost:3000/api/review/'+gameId)
+      .map((response: Response) => response.json())
+      .do((data) => {
+        console.log('review Data incoming')
+        console.log(data)
+      })
+      .catch(this.handleErrors);
+  }
 
   handleErrors(error:Response){
     console.log("Error Occured "+error);

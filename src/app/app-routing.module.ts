@@ -19,7 +19,7 @@ const routes: Routes = [
   { path: 'games', component: GamesComponent},
   { path: 'game/:id', component: GameComponent},
   { path: 'reviews', component: ReviewsComponent},
-  { path: 'reviews/:id', component: ReviewComponent},
+  { path: 'review/:id', component: ReviewComponent},
   { path: 'downloads', component: DownloadsComponent},
   { path: 'sysrequirements', component: SysrequirementsComponent},
   { path: 'sysrequirement', component: SysrequirementComponent},

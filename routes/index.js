@@ -21,13 +21,23 @@ restAPIs.getGameDetailsById = function (req, res) {
     });*/
     var selectedGame = _.filter(gamesArr, function (game) {
       console.log(game);
-      return game.id == gameId;
+      return gameId == game.id;
     });
   res.json(selectedGame);
 };
 
 restAPIs.getReviewDetails = function (req, res) {
   res.send(gamesReview);
+};
+
+restAPIs.getReviewById = function (req, res) {
+  var gameReviewArray = gamesReview.data;
+  var gameId = req.params.id;
+  var selectedGameReview = _.filter(gameReviewArray, function (review) {
+      console.log(review);
+    return gameId == review.id;
+  });
+  res.json(selectedGameReview);
 };
 
 module.exports = restAPIs;

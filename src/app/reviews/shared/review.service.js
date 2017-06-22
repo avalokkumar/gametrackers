@@ -21,6 +21,15 @@ var ReviewService = (function () {
         })
             .catch(this.handleErrors);
     };
+    ReviewService.prototype.getReviewById = function (gameId) {
+        return this.http.get('http://localhost:3000/api/review/' + gameId)
+            .map(function (response) { return response.json(); })
+            .do(function (data) {
+            console.log('review Data incoming');
+            console.log(data);
+        })
+            .catch(this.handleErrors);
+    };
     ReviewService.prototype.handleErrors = function (error) {
         console.log("Error Occured " + error);
         return rxjs_1.Observable.throw(error.json().error || 'Server Error Occurred');

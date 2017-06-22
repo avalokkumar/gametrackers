@@ -28,6 +28,7 @@ app.get('/api', function (req, res) {
 app.get('/api/games', route.getGameDetails);
 app.get('/api/games/:id', route.getGameDetailsById);
 app.get('/api/review', route.getReviewDetails);
+app.get('/api/review/:id', route.getReviewById);
 
 app.listen(3000, function(){
   console.log('Server is running on port 3000');
